@@ -1,5 +1,5 @@
 <h1 align="center" >🔑 Auth Module</h1>
-<p align="center">Zero-boilerplate authentication support for Nuxt.js!</p>
+<p align="center">Zero-boilerplate authentication support for Nuxt 2!</p>
 
 <p align="center">
 <a href="https://david-dm.org/nuxt-community/auth-module">
@@ -23,16 +23,21 @@
 </a>
 </p>
 
-<p align="center">
+## Nuxt 3 Support
+
+Nuxt 3 comes with built-in utilities to support session and authentication. We are working on a new official module. 
+
+Meanwhile, we recommend:
+
+- [Nuxt Auth Utils](https://github.com/atinux/nuxt-auth-utils)
+- [Sidebase Nuxt Auth](https://github.com/sidebase/nuxt-auth) based on next-auth
+- [AuthJs Nuxt](https://github.com/Hebilicious/authjs-nuxt) based on Auth.js
+- Implement your own auth using [Lucia](https://lucia-auth.com/guidebook/sign-in-with-username-and-password/nuxt/) or [Nuxt Auth Template](https://github.com/nuxt/examples/tree/main/auth/local)
+
+
+## Nuxt 2 Installation and Usage
+
 <a href="https://auth.nuxtjs.org">Read Documentation</a>
-</p>
-
-## Nuxt 3 Suppport
-
-Nuxt 3 comes with built-in utilities to support session and authentication. We are working on a new official module. Meanwhile, we recommend: 
-
-- [auth starter template](https://github.com/nuxt/examples/tree/main/auth/local) for Nuxt 3
-- [sidebase nuxt auth](https://sidebase.io/nuxt-auth/getting-started) powered by Auth.js
 
 **🚧 please see [status page](http://auth.nuxtjs.org/status) in documentation.**
 
