@@ -781,6 +781,11 @@ class RefreshController {
     return this._doRefresh();
   }
   _doRefresh() {
+    try {
+      window.$nuxt.$emit("refresh-token");
+    } catch (error) {
+      console.log("Cannot emit refresh-token event");
+    }
     this._refreshPromise = new Promise((resolve, reject) => {
       this.scheme.refreshTokens().then((response) => {
         this._refreshPromise = null;

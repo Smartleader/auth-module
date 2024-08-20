@@ -23,6 +23,11 @@ export class RefreshController {
   // Call this function when you intercept a request with an expired token.
 
   private _doRefresh(): Promise<HTTPResponse | void> {
+    try {
+      window.$nuxt.$emit("refresh-token")
+    } catch (error) {
+      console.log("Cannot emit refresh-token event")
+    }
     this._refreshPromise = new Promise((resolve, reject) => {
       this.scheme
         .refreshTokens()
