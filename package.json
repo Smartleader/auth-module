@@ -2,9 +2,12 @@
   "name": "@nuxtjs/auth-next",
   "version": "6.0.1",
   "description": "Authentication module for Nuxt.js",
-  "repository": "Smartleader/auth-module",
+  "repository": "git://git@github.com:Smartleader/auth-module.git",
   "license": "MIT",
   "sideEffects": "false",
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
+  },
   "exports": {
     ".": {
       "require": "./dist/module.js"
